@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jazzhandzapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/leftjazzhandimage"
+        android:label="Jazz Handz"
+        android:roundIcon="@drawable/leftjazzhandimage"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.RegisterActivity" />
+        <activity android:name=".Activities.DanceActivity" />
+        <activity android:name=".Activities.DanceRoutinesActivity" />
+        <activity android:name=".Activities.RoutineElementsActivity" />
+        <activity android:name=".Activities.PracticeActivity" />
+        <activity android:name=".Activities.DownloadRoutinesActivity" />
+        <activity android:name=".Activities.DownloadedRoutineElementsActivity" />
+    </application>
+
+</manifest>

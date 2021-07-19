@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "324513630398",
+    "firebase_url": "https://jazz-handz-app.firebaseio.com",
+    "project_id": "jazz-handz-app",
+    "storage_bucket": "jazz-handz-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324513630398:android:4b9fda0a2932f2df2736ef",
+        "android_client_info": {
+          "package_name": "com.example.jazzhandzapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324513630398-ql1dis5s1p5pm7hn10fl0876g7s239sm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmG-Ud6T2ITwxvwhtjYZV0MplzOd-z5DI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324513630398-ql1dis5s1p5pm7hn10fl0876g7s239sm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324513630398:android:0f59422cea2b9ebd2736ef",
+        "android_client_info": {
+          "package_name": "com.google.firebase.quickstart.auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324513630398-ql1dis5s1p5pm7hn10fl0876g7s239sm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmG-Ud6T2ITwxvwhtjYZV0MplzOd-z5DI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324513630398-ql1dis5s1p5pm7hn10fl0876g7s239sm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

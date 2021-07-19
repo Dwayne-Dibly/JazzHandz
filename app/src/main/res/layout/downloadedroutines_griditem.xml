@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/top"
+        android:layout_height="96dip"
+        android:padding="6dip">
+
+        <ImageView
+            android:id="@+id/downloadedicon"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="6dip"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_menu_black_24dp" />
+
+        <TextView
+            android:id="@+id/downloadedroutinenamelabel"
+            android:layout_width="wrap_content"
+            android:layout_height="26dip"
+            android:layout_alignParentBottom="false"
+            android:layout_above="@id/downloadedtracknamelabel"
+            android:layout_alignParentEnd="false"
+            android:layout_toEndOf="@id/downloadedicon"
+            android:layout_marginRight="6dip"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Routine: "
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/downloadedroutinenamegridview"
+            android:layout_width="fill_parent"
+            android:layout_height="26dip"
+            android:layout_alignParentBottom="false"
+            android:layout_above="@id/downloadedtracknamegridview"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/downloadedroutinenamelabel"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="RoutineName Text"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/downloadedcreatornamelabel"
+            android:layout_width="wrap_content"
+            android:layout_height="26dip"
+            android:layout_above="@id/downloadedroutinenamelabel"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="false"
+            android:layout_toEndOf="@id/downloadedicon"
+            android:layout_marginRight="6dip"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Creator: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/downloadedcreatorgridview"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/downloadedroutinenamegridview"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignTop="@id/downloadedcreatornamelabel"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_toEndOf="@id/downloadedcreatornamelabel"
+            android:layout_marginRight="6dip"
+            android:text="Creator"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/downloadedtempolabel"
+            android:layout_width="100dip"
+            android:layout_height="26dip"
+            android:layout_above="@id/downloadedroutinenamelabel"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="false"
+            android:layout_toEndOf="@id/downloadedcreatorgridview"
+            android:layout_marginRight="6dip"
+            android:layout_marginLeft="6dip"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Tempo (bpm):"
+            android:gravity="right"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/downloadedtempogridview"
+            android:layout_width="50dip"
+            android:layout_height="26dip"
+            android:layout_above="@id/downloadedroutinenamegridview"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="false"
+            android:layout_toEndOf="@id/downloadedtempolabel"
+            android:text="Tempo"
+            android:gravity="right"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/downloadedtracknamelabel"
+            android:layout_width="wrap_content"
+            android:layout_height="26dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="false"
+            android:layout_toEndOf="@id/downloadedicon"
+            android:layout_marginRight="6dip"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Artist - Track:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/downloadedtracknamegridview"
+            android:layout_width="fill_parent"
+            android:layout_height="26dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/downloadedtracknamelabel"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="TrackName Text"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</layout>

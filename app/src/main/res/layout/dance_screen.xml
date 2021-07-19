@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DanceActivity">
+
+    <ImageView
+        android:id="@+id/deleteImage"
+        android:layout_width="64dp"
+        android:layout_height="67dp"
+        android:contentDescription="Deleteimage"
+        android:src="@drawable/delete_forever_black_192x192"
+        app:layout_constraintBottom_toTopOf="@id/leftImage"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lastAction"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <TextView
+        android:id="@+id/lastAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:text="Last Action appears here"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@id/danceImage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/danceactivitytempolabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dip"
+        android:layout_marginTop="16dip"
+        android:text="Tempo:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/danceactivitytempo"
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:layout_marginTop="4dip"
+        android:inputType="number"
+        android:text="0000"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/danceactivitytempolabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/danceactivitybpmlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:layout_marginTop="16dip"
+        android:text="bpm"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/danceactivitytempo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/createmodetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:layout_marginTop="16dip"
+        android:text="createmode"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/danceactivitytempo"
+        app:layout_constraintTop_toBottomOf="@id/danceactivitybpmlabel"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/setTempoImage"
+        android:layout_width="70dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="0dip"
+        android:contentDescription="SetTempoImage"
+        android:src="@drawable/ic_launcher_time_foreground"
+        app:layout_constraintLeft_toRightOf="@id/danceactivitybpmlabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/countinlabel"
+        android:layout_width="80dip"
+        android:layout_height="54dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginTop="6dip"
+        android:text="Count me in!"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/setTempoImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/countinfirstfive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dip"
+        android:layout_marginTop="64dip"
+        android:layout_marginRight="20dip"
+        android:text="5,"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/danceImage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/countinfirstsix"
+        app:layout_constraintTop_toBottomOf="@id/lastAction" />
+
+    <TextView
+        android:id="@+id/countinfirstsix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dip"
+        android:layout_marginRight="20dip"
+        android:text="6,"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/danceImage"
+        app:layout_constraintLeft_toRightOf="@id/countinfirstfive"
+        app:layout_constraintRight_toLeftOf="@id/countinsecondfive"
+        app:layout_constraintTop_toBottomOf="@id/lastAction" />
+
+    <TextView
+        android:id="@+id/countinsecondfive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dip"
+        android:text="5,"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/danceImage"
+        app:layout_constraintLeft_toRightOf="@id/countinfirstsix"
+        app:layout_constraintRight_toLeftOf="@id/countinsecondsix"
+        app:layout_constraintTop_toBottomOf="@id/lastAction" />
+
+    <TextView
+        android:id="@+id/countinsecondsix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dip"
+        android:text="6,"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/danceImage"
+        app:layout_constraintLeft_toRightOf="@id/countinsecondfive"
+        app:layout_constraintRight_toLeftOf="@id/countinseven"
+        app:layout_constraintTop_toBottomOf="@id/lastAction" />
+
+    <TextView
+        android:id="@+id/countinseven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dip"
+        android:text="7,"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/danceImage"
+        app:layout_constraintLeft_toRightOf="@id/countinsecondsix"
+        app:layout_constraintRight_toLeftOf="@id/countineight"
+        app:layout_constraintTop_toBottomOf="@id/lastAction" />
+
+    <TextView
+        android:id="@+id/countineight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dip"
+        android:layout_marginRight="50dip"
+        android:text="8"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/danceImage"
+        app:layout_constraintLeft_toRightOf="@id/countinseven"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lastAction" />
+
+    <ImageView
+        android:id="@+id/clapTempoImage"
+        android:layout_width="140dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="10dip"
+        android:contentDescription="SetTempoImage"
+        android:src="@drawable/ic_launcher_time_foreground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/countinfirstfive" />
+
+    <ImageView
+        android:id="@+id/danceImage"
+        android:layout_width="198dp"
+        android:layout_height="315dp"
+        android:contentDescription="Danceimage"
+        android:src="@drawable/startimage"
+        app:layout_constraintBottom_toTopOf="@id/leftImage"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lastAction"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/leftImage"
+        android:layout_width="144dp"
+        android:layout_height="164dp"
+        android:contentDescription="Leftimage"
+        android:src="@drawable/leftfoot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/rightImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.929" />
+
+    <ImageView
+        android:id="@+id/rightImage"
+        android:layout_width="144dp"
+        android:layout_height="164dp"
+        android:contentDescription="Leftimage"
+        android:src="@drawable/rightfoot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintLeft_toRightOf="@id/leftImage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.929" />
+
+
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/frameLayout"-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:background="#ff0000" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

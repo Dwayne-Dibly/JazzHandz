@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:id="@+id/top"
+    android:layout_height="96dip"
+    android:padding="6dip">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dip"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_menu_black_24dp" />
+
+    <TextView
+        android:id="@+id/routinenamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_alignParentBottom="false"
+        android:layout_above="@id/tracknamelabel"
+        android:layout_alignParentEnd="false"
+        android:layout_toEndOf="@id/icon"
+        android:layout_marginRight="6dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Routine: "
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/routinenamegridview"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentBottom="false"
+        android:layout_above="@id/tracknamegridview"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/routinenamelabel"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="RoutineName Text"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/creatornamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_above="@id/routinenamelabel"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="false"
+        android:layout_toEndOf="@id/icon"
+        android:layout_marginRight="6dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Creator: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/creatorgridview"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/routinenamegridview"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignTop="@id/creatornamelabel"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toEndOf="@id/creatornamelabel"
+        android:layout_marginRight="6dip"
+        android:text="Creator"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tempolabel"
+        android:layout_width="100dip"
+        android:layout_height="26dip"
+        android:layout_above="@id/routinenamelabel"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="false"
+        android:layout_toEndOf="@id/creatorgridview"
+        android:layout_marginRight="6dip"
+        android:layout_marginLeft="6dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Tempo (bpm):"
+        android:gravity="right"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tempogridview"
+        android:layout_width="50dip"
+        android:layout_height="26dip"
+        android:layout_above="@id/routinenamegridview"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="false"
+        android:layout_toEndOf="@id/tempolabel"
+        android:text="Tempo"
+        android:gravity="right"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tracknamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_toEndOf="@id/icon"
+        android:layout_marginRight="6dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Artist - Track:"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tracknamegridview"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/tracknamelabel"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="TrackName Text"
+        android:textSize="16sp" />
+
+</RelativeLayout>
+</layout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:id="@+id/top"
+    android:layout_height="32dip"
+    android:paddingTop="6dip"
+    android:paddingLeft="6dip">
+
+
+    <TextView
+        android:id="@+id/practiceelementtimegridview"
+        android:layout_width="40dip"
+        android:layout_height="26dip"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Elementtime Text"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/practiceelementbeatgridview"
+        android:layout_width="40dip"
+        android:layout_height="26dip"
+        android:layout_toEndOf="@id/practiceelementtimegridview"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="6dip"
+        android:text="Beat"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/practiceelementmovegridview"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_toEndOf="@id/practiceelementbeatgridview"
+        android:layout_alignParentTop="true"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="ElementMove Text"
+        android:textSize="14sp" />
+
+</RelativeLayout>

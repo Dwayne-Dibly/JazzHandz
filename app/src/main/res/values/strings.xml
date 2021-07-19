@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Jazz Handz</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="name">Name</string>
+    <string name="home">Home</string>
+    <string name="reload">Reload</string>
+
+    <string name="auth_failed">Authentication failed</string>
+    <string name="emailpassword_title_text">Email and Password</string>
+    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="firebase_status_fmt">Firebase UID: %s</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="send_link">Send Link</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="signed_in">Signed In</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="verify_email">Verify</string>
+
+    <string name="leftstep">Left Step</string>
+    <string name="rightstep">Right Step</string>
+    <string name="lefthop">Left Hop</string>
+    <string name="righthop">Right Hop</string>
+    <string name="ballchangetoleft">Ball-change (to left)</string>
+    <string name="ballchangetoright">Ball-change (to right)</string>
+    <string name="lefttsuzieq">Left Suzie Q</string>
+    <string name="rightsuzieq">Right Suzie Q</string>
+    <string name="leftkick">Left Kick</string>
+    <string name="rightkick">Right Kick</string>
+    <string name="leftkickreplace">Left Kick-replace</string>
+    <string name="rightkickrepalce">Right Kick-replace</string>
+
+    <string name="jazzhandz">Right Suzie Q</string>
+
+</resources>

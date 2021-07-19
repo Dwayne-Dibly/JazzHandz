@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:padding="16dip">
+
+    <TextView
+        android:id="@+id/routinelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_above="@id/tracknamelabel"
+        android:layout_marginRight="6dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Routine: "
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/routine_id_view"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_above="@id/tracknamelabel"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="6dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="RoutineId "
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/routinenameelementview"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_above="@id/tracknameelementview"
+        android:layout_alignParentBottom="false"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="RoutineName Text"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@+id/routinelabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/creatornamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_marginRight="12dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Creator: "
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/routinelabel" />
+
+    <TextView
+        android:id="@+id/routinecreatorelementview"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        app:layout_constraintLeft_toRightOf="@+id/creatornamelabel"
+        app:layout_constraintTop_toBottomOf="@+id/routinenameelementview"
+        android:layout_marginRight="6dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Creator"
+        android:textSize="16sp"/>
+
+
+    <TextView
+        android:id="@+id/tracknamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_marginRight="6dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Artist - Track:"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/creatornamelabel" />
+
+    <TextView
+        android:id="@+id/tracknameelementview"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="TrackName Text"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/tracknamelabel"
+        app:layout_constraintTop_toBottomOf="@id/routinecreatorelementview" />
+
+    <TextView
+        android:id="@+id/tempolabel"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_marginRight="6dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Tempo (bpm)"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tracknamelabel" />
+
+    <TextView
+        android:id="@+id/tempoelementview"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Tempo"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/tempolabel"
+        app:layout_constraintTop_toBottomOf="@id/tracknameelementview" />
+
+    <Button
+        android:id="@+id/showroutineelements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tempoelementview"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Show Routine Steps"/>
+
+    <ImageView
+        android:id="@+id/practiceRoutine"
+        android:layout_width="64dp"
+        android:layout_height="88dp"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="10dip"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/replayRoutine"
+        app:layout_constraintTop_toBottomOf="@id/frameLayout"
+        app:layout_constraintVertical_bias="0.109"
+        app:srcCompat="@drawable/practicecon" />
+
+    <ImageView
+        android:id="@+id/replayRoutine"
+        android:layout_width="64dp"
+        android:layout_height="88dp"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="10dip"
+        app:layout_constraintLeft_toRightOf="@id/practiceRoutine"
+        app:layout_constraintRight_toLeftOf="@id/saveroutinebutton"
+        app:layout_constraintTop_toBottomOf="@id/frameLayout"
+        app:layout_constraintVertical_bias="0.109"
+        app:srcCompat="@drawable/playicon" />
+
+    <ImageView
+        android:id="@+id/saveRoutine"
+        android:layout_width="64dp"
+        android:layout_height="88dp"
+        app:layout_constraintLeft_toRightOf="@id/practiceRoutine"
+        app:layout_constraintRight_toLeftOf="@id/saveRoutinetoFirebase"
+        app:layout_constraintTop_toBottomOf="@id/frameLayout"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="92dip"
+        app:layout_constraintVertical_bias="0.109"
+        app:srcCompat="@drawable/save_image" />
+
+    <ImageView
+        android:id="@+id/saveRoutinetoFirebase"
+        android:layout_width="64dp"
+        android:layout_height="88dp"
+        app:layout_constraintLeft_toRightOf="@id/practiceRoutine"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frameLayout"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="220dip"
+        android:layout_marginRight="40dip"
+        app:layout_constraintVertical_bias="0.109"
+        app:srcCompat="@drawable/uploadicon" />
+
+    <TextView
+        android:id="@+id/newroutinelabel"
+        android:layout_width="200dip"
+        android:layout_height="26dip"
+        android:layout_marginLeft="48dip"
+        android:layout_marginTop="32dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Enter Routine Details: "
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/showroutineelements" />
+
+    <EditText
+        android:id="@+id/newroutinecreator"
+        android:layout_width="250dip"
+        android:layout_height="48dip"
+        android:layout_marginLeft="48dip"
+        android:layout_marginTop="8dip"
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        android:text="Your creator name / ID"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newroutinelabel" />
+
+    <EditText
+        android:id="@+id/newroutinename"
+        android:layout_width="250dip"
+        android:layout_height="48dip"
+        android:layout_marginLeft="48dip"
+        android:layout_marginTop="8dip"
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        android:text="Routine Name"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newroutinecreator" />
+
+    <EditText
+        android:id="@+id/newroutinetrack"
+        android:layout_width="250dip"
+        android:layout_height="48dip"
+        android:layout_marginLeft="48dip"
+        android:layout_marginTop="8dip"
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        android:text="Track - Artist (if any)"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newroutinename" />
+
+    <Button
+        android:id="@+id/saveroutinebutton"
+        android:layout_width="130dip"
+        android:layout_marginTop="8dip"
+        android:layout_marginRight="60dip"
+        android:text="Save Routine"
+        app:layout_constraintTop_toBottomOf="@id/newroutinetrack"
+        app:layout_constraintLeft_toRightOf="@id/cancelsaveroutinebutton"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="48dip"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/cancelsaveroutinebutton"
+        android:layout_width="120dip"
+        android:layout_marginLeft="60dip"
+        android:layout_marginTop="8dip"
+        android:text="Cancel"
+        app:layout_constraintTop_toBottomOf="@id/newroutinetrack"
+        app:layout_constraintRight_toLeftOf="@id/saveroutinebutton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="48dip"
+        android:visibility="invisible"/>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="350dp"
+        android:layout_height="320dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showroutineelements"
+        app:layout_constraintVertical_bias="0.0" >
+
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    android:background="#ff0000"-->

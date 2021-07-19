@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DanceActivity">
+
+    <TextView
+        android:id="@+id/lastAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:text="Last Action appears here"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/danceactivitytempolabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dip"
+        android:layout_marginTop="16dip"
+        android:text="Tempo:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/practiceactivitytempo"
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:layout_marginTop="16dip"
+        android:text="0000"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/danceactivitytempolabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/danceactivitybpmlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:layout_marginTop="16dip"
+        android:text="bpm"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/practiceactivitytempo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/countinfirstfive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="20dip"
+        android:text="5,"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/countinfirstsix"
+        app:layout_constraintTop_toBottomOf="@id/startpractice" />
+
+    <TextView
+        android:id="@+id/countinfirstsix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="20dip"
+        android:text="6,"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@id/countinfirstfive"
+        app:layout_constraintRight_toLeftOf="@id/countinsecondfive"
+        app:layout_constraintTop_toBottomOf="@id/startpractice" />
+
+    <TextView
+        android:id="@+id/countinsecondfive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="5,"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@id/countinfirstsix"
+        app:layout_constraintRight_toLeftOf="@id/countinsecondsix"
+        app:layout_constraintTop_toBottomOf="@id/startpractice" />
+
+    <TextView
+        android:id="@+id/countinsecondsix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="6,"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@id/countinsecondfive"
+        app:layout_constraintRight_toLeftOf="@id/countinseven"
+        app:layout_constraintTop_toBottomOf="@id/startpractice" />
+
+    <TextView
+        android:id="@+id/countinseven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="7,"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@id/countinsecondsix"
+        app:layout_constraintRight_toLeftOf="@id/countineight"
+        app:layout_constraintTop_toBottomOf="@id/startpractice" />
+
+    <TextView
+        android:id="@+id/countineight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="50dip"
+        android:text="8"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@id/countinseven"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startpractice" />
+
+    <TextView
+        android:id="@+id/savedroutinelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="20dip"
+        android:text="Saved Routine:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startpractice" />
+
+    <TextView
+        android:id="@+id/routineattemptlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="20dip"
+        android:text="This Routine:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="@id/practiceattemptframelayout"
+        app:layout_constraintTop_toBottomOf="@id/startpractice" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_marginTop="70dip"
+        android:layout_marginRight="16dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="RoutineId"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/lastAction"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/danceactivitybpmlabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/showroutineelements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Routine Steps"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lastAction" />
+
+    <Button
+        android:id="@+id/startpractice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Practice"
+        android:visibility="invisible"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lastAction" />
+
+    <Button
+        android:id="@+id/practiceresults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dip"
+        android:text="Practice Results"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@+id/startpractice"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lastAction" />
+
+    <FrameLayout
+        android:id="@+id/practiceframelayout"
+        android:layout_width="180dip"
+        android:layout_height="280dp"
+        android:layout_marginTop="10dip"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/danceImage"
+        app:layout_constraintTop_toBottomOf="@+id/countinfirstfive" />
+
+    <FrameLayout
+        android:id="@+id/practiceattemptframelayout"
+        android:layout_width="190dip"
+        android:layout_height="280dp"
+        android:layout_marginTop="10dip"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@id/practiceframelayout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countinfirstfive" />
+
+    <ImageView
+        android:id="@+id/danceImage"
+        android:layout_width="160dp"
+        android:layout_height="280dp"
+        android:contentDescription="Dance Image"
+        android:src="@drawable/startimage"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/practiceattemptframelayout" />
+
+    <ImageView
+        android:id="@+id/leftImage"
+        android:layout_width="144dp"
+        android:layout_height="164dp"
+        android:contentDescription="Leftimage"
+        android:src="@drawable/leftfoot"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/rightImage"
+        app:layout_constraintTop_toBottomOf="@id/practiceframelayout" />
+
+    <ImageView
+        android:id="@+id/rightImage"
+        android:layout_width="144dp"
+        android:layout_height="164dp"
+        android:contentDescription="Leftimage"
+        android:src="@drawable/rightfoot"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintLeft_toRightOf="@id/leftImage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/practiceframelayout" />
+
+    <TextView
+        android:id="@+id/finalScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Final Score:"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/practiceframelayout"
+        app:layout_constraintTop_toBottomOf="@id/lastAction" />
+
+    <TextView
+        android:id="@+id/finalScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Final Score"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@id/finalScoreLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lastAction" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

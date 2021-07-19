@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/practiceattempttimelabel"
+        android:layout_width="60dip"
+        android:layout_height="26dip"
+        android:layout_alignParentBottom="false"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentTop="true"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Time (s)"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/practiceattemptbeatlabel"
+        android:layout_width="40dip"
+        android:layout_height="26dip"
+        app:layout_constraintLeft_toRightOf="@id/practiceattempttimelabel"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="6dip"
+        android:text="Beat"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        app:layout_constraintLeft_toRightOf="@id/practiceattemptbeatlabel"
+        android:layout_alignParentTop="true"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Move"
+        android:textSize="12sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dip">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/practiceattemptelementrecyclerview"
+            android:layout_width="300dp"
+            android:layout_height="260dp"
+            android:paddingLeft="16dip"
+            android:paddingTop="6dip"
+            android:paddingRight="16dip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/practiceattemptbeatlabel" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    android:background="#ff0000"-->

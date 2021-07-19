@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:padding="16dip">
+
+    <TextView
+        android:id="@+id/downloadedroutinelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_above="@id/downloadedtracknamelabel"
+        android:layout_marginEnd="6dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Routine: "
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/downloaded_routine_id_view"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_above="@id/downloadedtracknamelabel"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="6dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="RoutineId "
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/downloadedroutinenameelementview"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_above="@id/downloadedtracknameelementview"
+        android:layout_alignParentBottom="false"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="RoutineName Text"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@+id/downloadedroutinelabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/downloadedcreatornamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_marginEnd="12dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Creator: "
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/downloadedroutinelabel" />
+
+    <TextView
+        android:id="@+id/downloadedroutinecreatorelementview"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        app:layout_constraintLeft_toRightOf="@+id/downloadedcreatornamelabel"
+        app:layout_constraintTop_toBottomOf="@+id/downloadedroutinenameelementview"
+        android:layout_marginEnd="6dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Creator"
+        android:textSize="16sp"/>
+
+
+    <TextView
+        android:id="@+id/downloadedtracknamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_marginEnd="6dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Artist - Track:"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/downloadedcreatornamelabel" />
+
+    <TextView
+        android:id="@+id/downloadedtracknameelementview"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="TrackName Text"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/downloadedtracknamelabel"
+        app:layout_constraintTop_toBottomOf="@id/downloadedroutinecreatorelementview" />
+
+    <TextView
+        android:id="@+id/downloadedtempolabel"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_marginEnd="6dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Tempo (bpm)"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/downloadedtracknamelabel" />
+
+    <TextView
+        android:id="@+id/downloadedtempoelementview"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Tempo"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/downloadedtempolabel"
+        app:layout_constraintTop_toBottomOf="@id/downloadedtracknameelementview" />
+
+    <Button
+        android:id="@+id/showdownloadedroutineelements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/downloadedtempoelementview"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Show Routine Steps"/>
+
+    <ImageView
+        android:id="@+id/downloadedpracticeRoutine"
+        android:layout_width="64dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="40dip"
+        android:layout_marginTop="10dip"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/replayDownloadedRoutine"
+        app:layout_constraintTop_toBottomOf="@id/frameLayout"
+        app:layout_constraintVertical_bias="0.109"
+        app:srcCompat="@drawable/practicecon"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/replayDownloadedRoutine"
+        android:layout_width="64dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="25dip"
+        android:layout_marginEnd="40dip"
+        android:layout_marginTop="10dip"
+        app:layout_constraintLeft_toRightOf="@id/downloadedpracticeRoutine"
+        app:layout_constraintRight_toLeftOf="@id/savedownloadedroutinebutton"
+        app:layout_constraintTop_toBottomOf="@id/frameLayout"
+        app:layout_constraintVertical_bias="0.109"
+        app:srcCompat="@drawable/playicon"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/saveDownloadedRoutine"
+        android:layout_width="64dp"
+        android:layout_height="88dp"
+        app:layout_constraintLeft_toRightOf="@id/downloadedpracticeRoutine"
+        app:layout_constraintRight_toLeftOf="@id/downloadedsaveRoutinetoFirebase"
+        app:layout_constraintTop_toBottomOf="@id/frameLayout"
+        android:layout_marginTop="10dip"
+        android:layout_marginStart="92dip"
+        app:layout_constraintVertical_bias="0.109"
+        app:srcCompat="@drawable/save_image" />
+
+    <ImageView
+        android:id="@+id/downloadedsaveRoutinetoFirebase"
+        android:layout_width="64dp"
+        android:layout_height="88dp"
+        app:layout_constraintLeft_toRightOf="@id/downloadedpracticeRoutine"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frameLayout"
+        android:layout_marginTop="10dip"
+        android:layout_marginStart="220dip"
+        android:layout_marginEnd="40dip"
+        app:layout_constraintVertical_bias="0.109"
+        app:srcCompat="@drawable/uploadicon"
+        android:visibility="invisible"/>
+
+
+
+    <Button
+        android:id="@+id/savedownloadedroutinebutton"
+        android:layout_width="180dip"
+        android:layout_marginEnd="60dip"
+        android:layout_marginStart="20dip"
+        android:text="Download Routine"
+        app:layout_constraintTop_toBottomOf="@id/showdownloadedroutineelements"
+        app:layout_constraintBottom_toTopOf="@+id/saveDownloadedRoutine"
+        app:layout_constraintLeft_toRightOf="@id/cancelsavedownloadedroutinebutton"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="48dip"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/cancelsavedownloadedroutinebutton"
+        android:layout_width="120dip"
+        android:layout_marginStart="60dip"
+        android:text="Cancel"
+        app:layout_constraintTop_toTopOf="@id/savedownloadedroutinebutton"
+        app:layout_constraintRight_toLeftOf="@id/savedownloadedroutinebutton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="48dip"
+        android:visibility="invisible"/>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="300dp"
+        android:layout_height="320dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showdownloadedroutineelements"
+        app:layout_constraintVertical_bias="0.0" >
+
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    android:background="#ff0000"-->

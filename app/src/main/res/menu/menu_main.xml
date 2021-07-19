@@ -1,0 +1,55 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jazzhandzapp.Activities.MainActivity">
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/actionHome"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:title="@string/home"
+        app:showAsAction="never" />
+    <item
+
+        android:id="@+id/actionLogin"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:orderInCategory="100"
+        android:title="Log In / Register"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:title="How to Play"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actionFreestyle"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:title="Freestyle Play"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actionCreate"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:title="Create Routine"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actionRoutines"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:title="Saved Routines"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actionDownloadedRoutines"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:orderInCategory="100"
+        android:title="Download Routines"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    </group>
+</menu>

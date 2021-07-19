@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lastAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/danceImage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Last Action appears here"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        />
+
+    <ImageView
+        android:id="@+id/danceImage"
+        android:layout_width="170dp"
+        android:layout_height="260dp"
+        android:contentDescription="Danceimage"
+        android:src="@drawable/startimage"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lastAction" />
+
+    <TextView
+        android:id="@+id/routineTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time(s):"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/danceImage"
+        app:layout_constraintRight_toLeftOf="@id/routineTime"
+        app:layout_constraintTop_toTopOf="@id/danceImage" />
+
+    <TextView
+        android:id="@+id/routineTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/routineTimeLabel"
+        app:layout_constraintLeft_toRightOf="@id/routineTimeLabel"
+        android:layout_marginLeft="5dip"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/routineBeatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beat:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/danceImage"
+        app:layout_constraintRight_toLeftOf="@id/routineBeat"
+        app:layout_constraintTop_toBottomOf="@id/routineTime" />
+
+    <TextView
+        android:id="@+id/routineBeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/routineTime"
+        app:layout_constraintLeft_toRightOf="@id/routineBeatLabel"
+        android:layout_marginLeft="5dip"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <SeekBar
+        android:id="@+id/playbackSeekBar"
+        android:layout_width="182dp"
+        android:layout_height="25dp"
+        app:layout_constraintLeft_toLeftOf="@id/danceImage"
+
+        app:layout_constraintTop_toBottomOf="@id/danceImage" />
+
+
+    <!--    <FrameLayout-->
+<!--        android:id="@+id/frameLayout"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:background="#ff0000" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
