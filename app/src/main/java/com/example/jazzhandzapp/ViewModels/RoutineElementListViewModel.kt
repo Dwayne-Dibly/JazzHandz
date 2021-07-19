@@ -9,14 +9,14 @@ import com.example.jazzhandzapp.Database.*
 import kotlinx.coroutines.launch
 import java.lang.Exception
 
-class RoutineElementListViewModel(application: Application): AndroidViewModel(application) {
+class RoutineElementListViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repository: DatabaseRepository
 
     val allCreators: LiveData<List<Creator>>
 
     val routineCreators: LiveData<List<CreatorRoutines>>
-    val allRoutines: LiveData<List<RoutineName>>
+    private val allRoutines: LiveData<List<RoutineName>>
     val allDanceMoves: LiveData<List<DanceMove>>
 
 
@@ -32,7 +32,6 @@ class RoutineElementListViewModel(application: Application): AndroidViewModel(ap
         routineCreators = repository.routineCreators
         allRoutines = repository.allRoutineNames
         allDanceMoves = repository.allDanceMoves
-
     }
 
     fun saveRoutine(routinename: RoutineName) {
@@ -48,31 +47,30 @@ class RoutineElementListViewModel(application: Application): AndroidViewModel(ap
 
         val newcreator = Creator(newroutinecreator_id, newroutinecreator)
 
-        viewModelScope.launch {repository.insertCreator(newcreator)}
+        viewModelScope.launch { repository.insertCreator(newcreator) }
     }
-
-
-    // need to add new routine!!
 
     fun insertElements(routinelistsize: Int, routineelements: ArrayList<Elements>) {
 
-        // routinelistsize == new routine primary key
-
         for (i in routineelements.indices) {
-            val danceelement: RoutineElement
 
-            danceelement = RoutineElement(0,routinelistsize, routineelements[i].elementmove!!.toInt(), routineelements[i].elementtime!!.toInt()
-                ,routineelements[i].elementbeat!!.toInt(),routineelements[i].routineelementtime!!.toInt(), routineelements[i].comments!!, routineelements[i].weighton!!)
+            val danceelement = RoutineElement(
+                0,
+                routinelistsize,
+                routineelements[i].elementmove!!.toInt(),
+                routineelements[i].elementtime!!.toInt(),
+                routineelements[i].elementbeat!!.toInt(),
+                routineelements[i].routineelementtime!!.toInt(),
+                routineelements[i].comments!!,
+                routineelements[i].weighton!!
+            )
 
-            viewModelScope.launch {repository.insertRoutineElement(danceelement) }
-
+            viewModelScope.launch { repository.insertRoutineElement(danceelement) }
         }
-
     }
 
     fun deleteRoutineElements(routineid: Int) {
-
-        viewModelScope.launch {repository.deleteRoutineElements(routineid) }
+        viewModelScope.launch { repository.deleteRoutineElements(routineid) }
     }
 
 }

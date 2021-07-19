@@ -51,12 +51,7 @@ class DownloadedRoutineElementListViewModel(application: Application): AndroidVi
         viewModelScope.launch {repository.insertCreator(newcreator)}
     }
 
-
-    // need to add new routine!!
-
     fun insertElements(routinelistsize: Int, routineelements: ArrayList<Elements>) {
-
-        // routinelistsize == new routine primary key
 
         for (i in routineelements.indices) {
             val danceelement: RoutineElement

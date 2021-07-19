@@ -35,36 +35,17 @@ class DanceActivityViewModel(application: Application): AndroidViewModel(applica
     }
 
     fun insertElement(danceelement: RoutineElement) {
-
         viewModelScope.launch {repository.insertRoutineElement(danceelement) }
-
-//        d("Paul", "last element ${danceelement.routinedancemoveId}")
-//
-//        if (danceelement.routinedancemoveId == 5) {
-//           allRoutineElements.observe(DanceActivity(), Observer { element_id -> element_id?.let { deleteLastElement(element_id, danceelement) } })
-//
-//            d("Paul", "Here")
-//
-//        } else
-//        if (danceelement.routinedancemoveId == 6) {
-//
-//        }
     }
 
     fun deleteLastElement(elements: List<RoutineElement>, danceelement: RoutineElement) {
-
-//        val lastelementindex = elements[elements.size-1].elementId
-//        d("Paul", "last element to delete ${danceelement.routinedancemoveId} ")
-//        viewModelScope.launch {repository.deleteLastElement(lastelementindex) }
     }
 
     fun deleteRoutineElements(routineid: Int) {
-
         viewModelScope.launch {repository.deleteRoutineElements(routineid) }
     }
 
     fun setDatabaseTempo(thisroutine: RoutineName) {
-
         viewModelScope.launch { repository.updateRoutineName(thisroutine) }
     }
 }
